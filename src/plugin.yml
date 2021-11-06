@@ -1,0 +1,12 @@
+name: "OUIL"
+main: "main"
+author: "Akik4"
+version: "0.0.1"
+commands:
+  test:
+    description: "Gros test"
+    permission: "ouil.test"
+  json:
+    description: "Tester le JSON"
+  read:
+    description: "Lire le JSON"
