@@ -26,6 +26,7 @@ public class spawn implements Listener {
             Block cible = Bukkit.getWorld("world").getBlockAt(Tloc);
             do{
                 if(Material.WATER == cible.getType()){
+                    block.setCancelled(false);
                     block.setCancelled(true);
                     Random r = new Random();
                     int low = 0;

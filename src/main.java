@@ -10,8 +10,6 @@ public class main extends JavaPlugin {
     @Override
     public void onEnable(){
         System.out.println("Plugin lancé");
-        getCommand("test").setExecutor(new test());
-        getCommand("json").setExecutor(new json());
         getCommand("read").setExecutor(new read());
 
         PluginManager pm = getServer().getPluginManager();

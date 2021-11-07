@@ -583,6 +583,8 @@ public class inv implements Listener {
                 ItemStack i14 = new ItemStack(Material.NETHER_WART);
                 ItemStack i15 = new ItemStack(Material.CARROT);
                 ItemStack i16 = new ItemStack(Material.COCOA_BEANS);
+                ItemStack i17 = new ItemStack(Material.SUGAR_CANE);
+                ItemStack i18 = new ItemStack(Material.CACTUS);
 
                 ItemMeta i1Meta = i1.getItemMeta();
                 ItemMeta i2Meta = i2.getItemMeta();
@@ -600,6 +602,8 @@ public class inv implements Listener {
                 ItemMeta i14Meta = i14.getItemMeta();
                 ItemMeta i15Meta = i15.getItemMeta();
                 ItemMeta i16Meta = i16.getItemMeta();
+                ItemMeta i17Meta = i17.getItemMeta();
+                ItemMeta i18Meta = i18.getItemMeta();
 
                 List<String> i1Lore = new ArrayList<>();
                 List<String> i2Lore = new ArrayList<>();
@@ -617,6 +621,8 @@ public class inv implements Listener {
                 List<String> i14Lore = new ArrayList<>();
                 List<String> i15Lore = new ArrayList<>();
                 List<String> i16Lore = new ArrayList<>();
+                List<String> i17Lore = new ArrayList<>();
+                List<String> i18Lore= new ArrayList<>();
 
                 i1Lore.add("§dAcheter pour : 5€");
                 i2Lore.add("§dAcheter pour : 20€");
@@ -634,6 +640,8 @@ public class inv implements Listener {
                 i14Lore.add("§dAcheter pour : 200€");
                 i15Lore.add("§dAcheter pour : 30€");
                 i16Lore.add("§dAcheter pour : 10€");
+                i17Lore.add("§dAcheter pour : 10€");
+                i18Lore.add("§dAcheter pour : 10€");
 
                 i1Meta.setLore(i1Lore);
                 i2Meta.setLore(i2Lore);
@@ -651,6 +659,8 @@ public class inv implements Listener {
                 i14Meta.setLore(i14Lore);
                 i15Meta.setLore(i15Lore);
                 i16Meta.setLore(i16Lore);
+                i17Meta.setLore(i17Lore);
+                i18Meta.setLore(i18Lore);
 
                 i1.setItemMeta(i1Meta);
                 i2.setItemMeta(i2Meta);
@@ -668,6 +678,8 @@ public class inv implements Listener {
                 i14.setItemMeta(i14Meta);
                 i15.setItemMeta(i15Meta);
                 i16.setItemMeta(i16Meta);
+                i17.setItemMeta(i17Meta);
+                i18.setItemMeta(i18Meta);
 
                 food.setItem(0, i1);
                 food.setItem(1, i2);
@@ -685,6 +697,8 @@ public class inv implements Listener {
                 food.setItem(13, i14);
                 food.setItem(14, i15);
                 food.setItem(15, i16);
+                food.setItem(16, i17);
+                food.setItem(17, i18);
 
                 player.openInventory(food);
             }else if(item.getItemMeta().getDisplayName().equals("§cSpécial")){

@@ -94,6 +94,10 @@ public class buy implements Listener {
                 buy(player, 30, item, Material.CARROT);
             }else if(item.getType() == Material.COCOA_BEANS){
                 buy(player, 10, item, Material.COCOA_BEANS);
+            } else if(item.getType() == Material.SUGAR_CANE){
+                buy(player, 10, item, Material.SUGAR_CANE);
+            } else if(item.getType() == Material.CACTUS){
+                buy(player, 10, item, Material.CACTUS);
             }
         } else if (name.equals("§aAutres")){
             event.setCancelled(true);
